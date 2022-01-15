@@ -124,12 +124,13 @@ form p span {
 
 [type="email"] {
     width: 400px;
-    height: 20px;
+    height: 40px;
+    padding: 15px;
     font-family: inherit;
     font-size: inherit;
-    padding: 20px;    
-    margin-bottom: 15px;
+    
     border-radius: 4px;
+    text-align: center;
 }
 
 [type="submit"] {
@@ -141,6 +142,9 @@ form p span {
     font-family: inherit;
     font-size: inherit;
     font-weight: bold;
+    margin-top: 30px;
+    transition: 0.3s;
+    
 }
 
 [type="submit"]:hover {
