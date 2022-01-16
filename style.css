@@ -309,3 +309,9 @@ form p span {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .container-main {
+        width: 100%;
+        padding: 0px 10px;
+        
+}
