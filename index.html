@@ -17,29 +17,30 @@
             <h2 class="header-logo name">Candle Co.</h2>
             <nav id="nav-bar" class="nav-left">
                 <ul>
-                    <li class="nav-link"><a href="#">About</a></li>
-                    <li class="nav-link"><a href="#">Features</a></li>
-                    <li class="nav-link"><a href="#">Pricing</a></li>
+                    <li><a class="nav-link" href="#hero">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="hero">
+        <section class="hero" id="hero">
             <h1 class="hero-heading">Candle Co.</h1>
             <form action="https://www.freecodecamp.com/email-submit" id="form">
                 <P>Subscribe to our mailing list and receive <span>10% OFF</span></P>
-                <input type="email" autofocus="1" placeholder="Email Address" id="email">
-                <input type="submit" value="SUBSCRIBE">
+                <input type="email" autofocus="1" name="email" placeholder="Email Address" id="email">
+                <input type="submit" id="submit" value="SUBSCRIBE">
             </form>
         </section>
         
-        <section class="about">
+        <section class="about" id="about">
             <h3 class="section-heading">About Us</h2>
             <div class="iframe-container">
                 <iframe id="video" width="400px" height="300px" src="https://www.youtube.com/embed/XS0q90-y0Vo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eveniet expedita modi, numquam ratione excepturi rerum quas nemo magnam, sit maiores blanditiis cum suscipit corrupti tempora dolor praesentium provident ad!</p>
         </section>
-        <section class="features">
+        <section class="features" id="features">
             <h3 class="section-heading">Features</h2>
             <ul class="features-container">
                 <li class="features-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore rem, minima debitis alias veritatis quod modi magni, architecto commodi fugiat totam nulla sint sed expedita.</li>
@@ -50,54 +51,57 @@
         </section>
         <section class="section pricing" id="pricing">
             <h3 class="section-heading">Pricing</h3>
-            <div class="price-item">
-                <h4>Candle No. 1</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                </ul>
-                <p class="price">$25.00</p>
-                <button type="button">Select</button>
-            </div> 
-            <div class="price-item">
-                <h4>Candle No. 2</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                </ul>
-                <p class="price">$45.00</p>
-                <button type="button">Select</button>
-            </div>  
-            <div class="price-item">
-                <h4>Candle No. 3</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                </ul>
-                <p class="price">$65.00</p>
-                <button type="button">Select</button>
-            </div>  
-            <div class="price-item">
-                <h4>Candle No. 4</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                </ul>
-                <p class="price">$105.00</p>
-                <button type="button">Select</button>
-            </div>  
+            <div class="price-item-container">
+                <div class="price-item">
+                    <h4>Candle No. 1</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                    <p class="price">$25.00</p>
+                    <button type="button">Select</button>
+                </div> 
+                <div class="price-item">
+                    <h4>Candle No. 2</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                    <p class="price">$45.00</p>
+                    <button type="button">Select</button>
+                </div>  
+                <div class="price-item">
+                    <h4>Candle No. 3</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                    <p class="price">$65.00</p>
+                    <button type="button">Select</button>
+                </div>  
+                <div class="price-item">
+                    <h4>Candle No. 4</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                    <p class="price">$105.00</p>
+                    <button type="button">Select</button>
+                </div>  
+            </div>    
         </section>
     </div>    
     <footer class="footer">
         <p class="footer-copyright">Candle &amp Co. &#169 2022</p>
     </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
